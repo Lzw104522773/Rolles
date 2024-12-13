@@ -12,7 +12,7 @@ ALWAYS
 
 	/* Converts tra files to UTF-8 */
 	ACTION_DEFINE_ARRAY s#_reload BEGIN setup END
-	ACTION_DEFINE_ARRAY s#_noconvert BEGIN setup-osx setup-unix setup-win32 END
+	ACTION_DEFINE_ARRAY s#_noconvert BEGIN setup END
 	LAF HANDLE_CHARSETS
 		INT_VAR
 			infer_charset = 1
@@ -48,7 +48,7 @@ LANGUAGE ~Polski (tlumaczenie: Aristo)~
 
 LANGUAGE ~Simplified Chinese~
          ~schinese~
-         ~rolles/tra/schinese/setup-%WEIDU_OS%.tra~
+         ~rolles/tra/schinese/setup.tra~
 
 /* ==================================== *
  *         Rolles Safyer (ToB)          *
